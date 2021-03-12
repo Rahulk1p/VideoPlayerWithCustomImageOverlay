@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- based on the wonderful tutorial from iEatWebsites at https://www.youtube.com/watch?v=yY6XnbWnK4o&t=930s -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Video Player test of streaming video</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+</head>
+<body>
+    <div class="container" id="video1">
+        <div class="c-video">
+          <!-- You'll need to supply your own video URL. I was testing with the public domain movie, Big Buck Bunny -->
+		  <div id="imgoverlay" ></div>
+            <video src="./video/video.mp4" class="video"></video>
+            <div class="controls">
+                <div class="orange-bar">
+                    <div class="orange-juice">
+                        <!-- this will be the progress bar-->
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="play-pause"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="cordova.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
